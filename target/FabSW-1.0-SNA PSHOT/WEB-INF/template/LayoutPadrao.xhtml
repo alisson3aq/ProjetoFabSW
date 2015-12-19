@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      lang="pt-br"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title><ui:insert name="titulo">.:: - SCP - ::</ui:insert></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"/>
+        <h:outputStylesheet library="css" name="sistemas.css"/>
+    </h:head> 
+    <style>
+    </style>
+    <h:body >
+        <header>
+            <div style="float: left;">
+                <h:link outcome="/index.xhtml">
+                    <h:graphicImage library="imgs" name="logo.png"/> 
+                </h:link>
+            </div>
+            <h:form style="float: right; margin-right: 5%;">
+                <p:menubar styleClass="menuPrincipal">
+                    <p:submenu label="CADASTROS" icon="ui-icon-folder-collapsed">
+                        <p:menuitem value="Cadastrar Produto" url="#" />
+                        <p:separator />
+                        <p:menuitem value="Cadastrar Insumo" url="#" />
+                    </p:submenu>
+                    <p:submenu label="RELATÓRIOS" icon="ui-icon-print">
+                        <p:menuitem value="Listar Produtos" url="#"/>
+                        <p:separator/>
+                        <p:menuitem value="Listar Insumos" url="#"/>
+                    </p:submenu>
+                    <p:menuitem value="TESTES" outcome="testes.xhtml"/>
+                    <p:menuitem value="TESTES-2" onclick="abrir.show(); return false;"/>
+                </p:menubar>
+            </h:form>
+            <div class="clear"></div>
+            <!--<ui:insert name="menuPrincipal" />-->
+        </header>
+
+
+        <div id="conteudo">
+            <ui:insert name="corpo"/>
+        </div>
+        <div class="clear"></div> 
+
+        <footer>
+            <strong>Desenvolvido por Alisson Almeida</strong> - Projeto Fábrica de Software da Faculdade Leão Sampaio
+        </footer> 
+    </h:body>
+</html>

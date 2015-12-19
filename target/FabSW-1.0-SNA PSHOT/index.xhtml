@@ -1,0 +1,21 @@
+<ui:composition template="/WEB-INF/template/LayoutPadrao.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="titulo">Dashbord</ui:define>
+    
+    <ui:define name="corpo">
+        Seja Bem Vindo
+        <p:dialog header="Meu Dialogo - Nova Janela" widgetVar="abrir"
+                  maximizable="true" minimizable="true"  width="90%" height="300"
+                  showEffect="sheke">
+            conteudo do Dialogo 
+            
+        </p:dialog>
+
+    </ui:define>
+</ui:composition>
+
