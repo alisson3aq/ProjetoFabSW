@@ -1,0 +1,90 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+    /*font-family: sans-serif;*/
+    font-size: 0.985em;
+    font-weight: 400;
+    color: #000000;
+    /*font-family: aero;*/
+
+    line-height: 1.2;
+    letter-spacing: 0em;
+    vertical-align: middle;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@font-face {
+    font-family: aero;
+    src: url(#{resource['font/aero/aea-webfont.ttf']});
+src: url(#{resource['font/aero/aea-webfont.eot?#iefix']}) format(#{resource['font/aero/embedded-opentype']}),
+url(#{resource['font/aero/aea-webfont.woff']}) format('woff'),
+url(#{resource['font/aero/aea-webfont.ttf']}) format('truetype'),
+url(#{resource['font/aero/aea-webfont.svg#AeroRegular']}) format('svg');
+}
+
+body{
+    font-size: 15px;
+    font-family: Arial,Helvetica, sans-serif;
+    font-weight: normal;
+    background: url(#{resource['imgs:bg.jpg']}) no-repeat center right;
+background-size: cover;
+}
+header{
+    padding: 5px 0px;
+    margin-bottom: 20px;
+    /*height: 20%;*/
+    background-color: rgba(10,10,10, 0.7);
+    /*background-color: #6598c5;*/
+    box-shadow: 0px 2px 2px #868279;
+
+}
+header img{
+    max-width: 40%;
+    padding-left: 7%;
+    margin-left: 10%;
+
+}
+.menuPrincipal{
+    margin-top: 13px !important;
+    border: 0px !important;
+    padding: 1px !important;
+    background: none !important;
+    font-size: 1.05em;
+}
+.menuPrincipal .ui-menu-parent> a .ui-menuitem-text, .menuPrincipal> .ui-menu-list> .ui-menuitem > a > .ui-menuitem-text{
+    color: #ffffff;
+}
+
+#conteudo{
+    font-family: aero;
+    padding: 0px 8px;
+    margin: 0 auto;
+    max-width: 90%;
+    min-height: 400px;
+    /*background-color: rgba(255,255,255,0.6);*/
+    /*box-shadow: #c7c7c7 7px 7px 5px;*/
+    /*border-radius: 15px;*/
+}
+footer{
+    width: 100%;
+    min-height: 35px;
+    padding: 3px 8px;
+    margin: 0px 20px 3px 0px;
+    position:fixed;
+    bottom:-1px;
+    border-top: 2px solid #212121;
+    border-bottom:2px solid #212121;
+    background-color: cadetblue;
+    color: #fff;
+    text-align: right;
+    font-style: italic;
+    font-family: aero;
+}
+.clear{
+    clear: both;
+}
